@@ -13,6 +13,11 @@ h1 + p {
     color: #fff;
     text-transform: uppercase;
 }
+h2{
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+}
 .bg {
     background-image: url(../img/Rectangle.png);
     background-repeat: no-repeat;
@@ -24,7 +29,7 @@ h1 + p {
 .wrapper {
     max-width: 1100px;
     margin: 0 auto;
-    text-align: center;
+    
 }
 .wrapper-gray {
     background-color: #F7F7F7;
@@ -44,4 +49,108 @@ h1 + p {
     justify-content: space-between;
     max-width: 1000px;
     margin: -100px auto 0;
+}
+.box-party{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.box-party img {
+    width: 100%;
+}
+.box-party > div {
+    flex-basis: 32%;
+    max-width: 32%;
+}
+.box-party h3{
+    position: relative;
+    padding-top: 20px;
+}
+.box-party h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55px;
+    height: 6px;
+    background-color: #F7654A;
+}
+.contact {
+    background-color: #F7654A;
+    color: #fff;
+}
+.box-contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-contact button {
+    background-color: #fff;
+    border: none;
+    padding: 15px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.box-contact h3{
+    font-size: 48px;
+    letter-spacing: 0.02em;
+}
+.box-contact p{
+    font-size: 24px;
+    letter-spacing: 0.02em;
+}
+.grid{
+    text-align: center;
+    display: grid;
+    grid-template-areas: "a b c" "d e f";
+    grid-gap: 20px;
+}
+.grid-item {
+    background-color: #F7F7F7;
+    padding: 20px;
+}
+.grid-one {
+    grid-area: a;
+}
+.grid-two {
+    grid-area: b;
+}
+.grid-three {
+    grid-area: c;
+}
+.grid-four {
+    grid-area: d;
+}
+.grid-five {
+    grid-area: e;
+}
+.grid-six {
+    grid-area: f;
+}
+.grid-photo{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-photo-item{
+    height: 100%;
+    position: relative;
+}
+
+.grid-photo-item::before{
+    content: '';
+    background-color: rgba(64, 65, 73, 0.5);
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+.grid-photo-item:hover::before{
+    background-color: rgba(64, 65, 73, 0);
+}
+.grid-photo img {
+    width: 100%;
+    height: 100%;
 }

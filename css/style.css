@@ -154,3 +154,91 @@ h2{
     width: 100%;
     height: 100%;
 }
+.box-feedback {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.box-feedback > div {
+    box-sizing: content-box;
+    flex-basis: 32%;
+    max-width: 32%;
+}
+.feddback {
+    background-color: #F7F7F7;
+    color: #999999;
+    font-family: 'Open Sans',
+    sans-serif ;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 20px 30px;
+}
+.name {
+    font-size: 21px;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+}
+.feddback::before{
+    content: '';
+    background-image: url(../img/Kov.svg);
+    background-repeat: no-repeat;
+    display: block;
+    width: 34px;
+    height: 28px;
+}
+.contacts{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1100px;
+    text-align: center;
+}
+.cont h3{
+    font-size: 24px;
+}
+.gray{
+    color: #999999;
+    margin-bottom: 20px;
+}
+.con{
+    margin-top: 10px;
+}
+.cont1{
+    margin-top: 50px;
+}
+.or{
+    color: #F7654A;
+}
+.or1{
+    margin-top: -20px;
+}
+.tx{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.footer{
+    background-color: #404149;
+    max-height: 250px;
+    padding: 10px;
+    margin-top: 60px;
+}
+.ft{
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+.foter p{
+    vertical-align: middle;
+    color: white;
+    font-size: 16px;
+}
+.foot{
+    display: flex;
+    color: white;
+    font-size: 16px;
+}
+.pr{
+    margin-right: 5px;
+}
